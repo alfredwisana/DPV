@@ -36,4 +36,6 @@ Quan cont					Shape
 Quan disc					Position
 							Line Attributes(Widht, Shape)
 							Text Attributes(weight, font-face)
-							
+
+
+Aesthetics are quantifiable attributes of the visualizations						
