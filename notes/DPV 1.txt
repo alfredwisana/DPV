@@ -1,0 +1,39 @@
+Data Presentation n Visualization
+Monday 12/02/2024
+Classroom : Programming Laboratory (P.206)
+Lecturer: Adi Wibowo, Ph.D
+
+
+Discrete n Continous Value
+
+Discreete: 
+	- New Value can be added to the remaining options
+	- No Intermediate Value between 2 existing data options
+Continous:
+	- memiliki rentang nilai yang tak terbatas.contoh suhu atau tinggi badan
+	
+
+Quantitave n Qualitative value
+
+Quantitative: 
+	- Quantity --> numerical as a real number
+	- can be compared
+	- can be discrete or continous
+Qualitative: 
+	- Coding <Give Code to something>
+		e.g. the country code (Indonesia <+62> and others)
+	- Order --> something with specific order
+		e.g. economic factors (good,fair,bad)
+	- UnOrder Data --> do not have specific order to be made to an order
+		e.g: dog,cat,fish
+	- Always Discreete
+
+Data     <-- Sacaling -->   Aesthetics
+------------------------------------------------
+Qual Ordered				Color (blue,red)
+Qual UnOrder				Size
+Quan cont					Shape
+Quan disc					Position
+							Line Attributes(Widht, Shape)
+							Text Attributes(weight, font-face)
+							
