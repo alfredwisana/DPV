@@ -11,7 +11,8 @@ Discreete:
 Continous:
 	- memiliki rentang nilai yang tak terbatas.contoh suhu atau tinggi badan
 	
-	
+
+Quantitave n Qualitative value
 
 Quantitative: 
 	- Quantity --> numerical as a real number
