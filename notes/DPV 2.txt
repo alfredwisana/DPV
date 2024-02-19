@@ -1,0 +1,32 @@
+Monday 19 Feb 2023
+
+Aesthetics
+
+1. x-axis
+2. y-axis
+3. Color
+4. Shape
+5. Size 
+
+Cannot understand the graph without the x-axis (data) n y-axis(categorical)
+
+SCALE
+
+Map to 1:1 1 data -> 1 graph
+	MAP 1 TYPE OF DATA TO 1 AESTHAETICS
+
+
+For every type of visualizations
+	- Determine the number of aesthatics (some allow 2, some 2, some 4)
+	- For every Aesthatics determine the type of data ( qual vs quant , cont vs disc)
+
+Position Scales: Map 1 Data to 1 Position
+	Using cartesian coordinates -> to find the position
+		x-axis n y-axis
+		Use of coordinates 
+
+
+
+SLIDE CH.2 NO 6
+	Compress / spread --> all of them are valid
+	Not wise to manipulate the data -> not using the scale  correctly
