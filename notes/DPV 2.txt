@@ -30,3 +30,24 @@ Position Scales: Map 1 Data to 1 Position
 SLIDE CH.2 NO 6
 	Compress / spread --> all of them are valid
 	Not wise to manipulate the data -> not using the scale  correctly
+
+IF USE THE SAME UNIT in the x-axis n y-axis --> use the same distance between the data --> equal lenght
+
+NonLinear Axes --> the progression is not linear
+
+
+5 - 15 - 30 - 50 ==> if visualize can be larger 
+
+Used the log scale --> dynamic equation
+
+Outliers ==> Data that have an anomaly, seperate themselves
+	Very low number or very large numbers
+	Make the visualization hard to understand
+
+Log transform the data --> transform the data value
+Make The Visualization is smaller --> not showingt the difference
+
+
+Curved Axes
+	1. Angle
+	2. Radius
