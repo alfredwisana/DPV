@@ -45,7 +45,7 @@ Outliers ==> Data that have an anomaly, seperate themselves
 	Make the visualization hard to understand
 
 Log transform the data --> transform the data value
-Make The Visualization is smaller --> not showingt the difference
+Make The Visualization is smaller --> not showing the difference
 
 
 Curved Axes
