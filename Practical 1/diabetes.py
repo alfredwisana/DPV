@@ -84,19 +84,3 @@ plt.xlabel('BMI')
 plt.show()
 
 
-# ----------------------------------------
-# ECDF PLOT
-# ----------------------------------------
-
-sns.set_theme(style="whitegrid", palette="pastel")
-fig, ax = plt.subplots(1, 2, constrained_layout = True)
-fig.set_figheight(5.5)
-fig.set_figwidth(9)
-
-sns.ecdfplot(data, x='BMI', ax=ax[0])
-ax[0].set_title('Body Mass Index')
-sns.ecdfplot(data, x='BP', ax=ax[1])
-ax[1].set_title('Blood Pressure')
-
-plt.suptitle('ECDF of Various Attributes')
-plt.show()
