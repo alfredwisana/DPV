@@ -83,4 +83,3 @@ plt.ylabel('Diabetes Progress')
 plt.xlabel('BMI')
 plt.show()
 
-
