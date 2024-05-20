@@ -67,6 +67,7 @@ X-Y relationships:
                  dan ditampilkan menggunakan heatmap.
 
                  sns.heatmap(data.corr());
+
 (---Time Series---)
 4.9 line graph: sns.lineplot(data, x, y)
 4.10 connected scatterplot: sns.lineplot(data, x, y, sort=False, ci=None) 
