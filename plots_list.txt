@@ -1,0 +1,111 @@
+Amounts: 
+1.1 bar: sns.countplot(data,x,stat), sns.barplot(data)
+  2 Aesthetics --> X and Y
+1.2 horizontal bar: sns.countplot(data,y), sns.barplot(data,orient='h')  # orient = v,h,x,y
+1.3 dots: plt.plot(x, y, marker='o', linestyle='none')
+1.4 heatmap: sns.heatmap(data) # kolom data akan menjadi sumbu x, baris data -> sumbu y 
+1.5 grouped bars: sns.countplot(data,x,hue), sns.barplot(data,x,y,hue)
+1.6 stacked bars: plt.bar(bottom) + subplots
+
+Catatan: 
+- Barplot di seaborn sebenarnya tidak digunakan untuk menunjukkan count, tetapi amount yg terkait besaran lainnya, yaitu median,mean,std,percentile,min,max 
+- Gunakan parameter 'estimator' untuk menentukan amount yg dipakai
+Contoh: sns.barplot(diabetes, x='AGE', y='BP',estimator='mean')
+
+Distributions: 
+2.1 histogram: sns.histplot(data, x, stat, hue, bins, binwidth, element, multiple) 
+2.2 density plot: sns.kdeplot(data, x, hue, multiple)
+2.3 ecdf plot: sns.ecdfplot(data, x)
+2.4 qq plot: import statsmodels.api as sm
+             sm.qqplot(data, line='45') 
+2.5 boxplot: sns.catplot(data,x,y,hue,kind="box")
+2.6 violin: sns.catplot(data,x,y,hue,kind="violin")
+2.7 strip chart: sns.swarmplot(datra, x, y, size)
+2.8 sina plot: sama dengan 2.6 + 2.7
+2.9 stacked histogram: sama dengan 2.1
+2.10 overlapping densities: sama dengan 2.2
+2.11 ridgeline plots: sns.FacetGrid(data,row,hue,aspect) + sns.kdeplot()
+
+Catatan:
+- Untuk menampilkan diagram distribusi dan correlation sekaligus bisa menggunakan pairplot
+  sns.pairplot(data, x_vars, y_vars, hue, kind, diag_kind)
+
+
+Proportions: 
+3.1 pie chart: plt.pie(data,labels,startangle,explode,autopct)
+3.2 side-by-side bars: lihat contoh 1.5
+3.3 stacked bars: lihat contoh 1.6
+3.4 multiple pie charts: plt.subplots(nrows, ncols, sharex, sharey, constrained_layout)
+                         plt.pie(data,labels,startangle,explode,autopct)
+3.5 grouped bars: lihat contoh 1.5
+3.6 stacked densities: lihat contoh 2.2
+3.7 mosaic plot: from statsmodels.graphics.mosaicplot import mosaic
+                 mosaic(data, properties, labelizer)
+                 # data adalah dataframe berisi pivot data 
+3.8 treemap: import plotly.express as px
+             px.treemap(data, path, values)
+3.9 parallel sets: import plotly.express as px
+                   px.parallel_categories(data, dimensions)
+
+
+X-Y relationships: 
+4.1 scatterplot: sns.scatterplot(data, x, y, size, style, hue)
+4.2 bubble chart: bubble plot adalah scatterplot yang menggunakan parameter 
+                  size. lihat contoh 4.1
+4.3 paired scatterplot: plot ini adalah scatterplot biasa dimana sumbu x dan y 
+                        menggunakan data dengan satuan yg sama, dan terdapat garis 
+                        diagonal (x=y)
+4.4 slopegraph: sns.pointplot(data,x,y,hue)
+4.5 density contours: menggunakan kdeplot seperti contoh 2.2
+                      Hanya saja ditambahkan parameter y agar terdapat dua distribusi,
+                      masing-masing untuk sumbu x dan y (catatan: contoh 2.2 hanya punya
+                      parameter x)
+4.6 2D bins:  sns.jointplot(data, x, y, kind='hist')
+4.7 hex bins: sns.jointplot(data, x, y, kind='hex')
+4.8 correlogram: correlogram digunakan untuk menunjukkan korelasi dari beberapa faktor. 
+                 Karena itu besar nilai korelasi antar faktor perlu dihitung lebih dulu, 
+                 dan ditampilkan menggunakan heatmap.
+
+                 sns.heatmap(data.corr());
+(---Time Series---)
+4.9 line graph: sns.lineplot(data, x, y)
+4.10 connected scatterplot: sns.lineplot(data, x, y, sort=False, ci=None) 
+                Parameter 'sort=False' memastikan bahwa data ditampilkan sesuai urutan kemunculan 
+                di dalam dataframe, bukan diurutkan berdasarkan besar valuenya.
+4.11 smooth line graph: sns.regplot(data,x,y) atau
+                        sns.pairplot(data, x_vars, y_vars, kind='reg')
+
+
+Geospatial data: 
+5.1 map: image_var = matplotlib.image.imread(imagefile)
+         plt.imshow(image_var, extent)
+5.2 choropleth map
+5.3 cartogram
+5.4 cartogram heatmap
+
+
+
+
+
+COLOR PALETTES
+Accent  Accent_r  Purples Purples_r bwr       bwr_r jet   jet_r
+Blues   Blues_r   RdBu    RdBu_r    cividis   cividis_r   magma   magma_r
+BrBG    BrBG_r    RdGy    RdGy_r    cool      cool_r      nipy_spectral nipy_spectral_r
+BuGn    BuGn_r    RdPu    RdPu_r    coolwarm  coolwarm_r  ocean   ocean_r
+BuPu    BuPu_r    RdYlBu  RdYlBu_r  copper    copper_r    pink    pink_r
+CMRmap  CMRmap_r  RdYlGn  RdYlGn_r  cubehelix cubehelix_r plasma  plasma_r
+Dark2   Dark2_r   Reds    Reds_r    flag      flag_r      prism   prism_r
+GnBu    GnBu_r    Set1    Set1_r    gist_earth  gist_earth_r      rainbow rainbow_r
+Greens  Greens_r  Set2    Set2_r    gist_gray gist_gray_r seismic seismic_r
+Greys   Greys_r   Set3    Set3_r    gist_heat gist_heat_r spring  spring_r
+OrRd    OrRd_r    Spectral  Spectral_r        gist_ncar   gist_ncar_r summer  summer_r
+Oranges Oranges_r Wistia  Wistia_r  gist_rainbow          gist_rainbow_r  tab10 tab10_r
+PRGn    PRGn_r    YlGn    YlGn_r    gist_stern  gist_stern_r      tab20 tab20_r
+Paired  Paired_r  YlGnBu  YlGnBu_r  gist_yarg gist_yarg_r tab20b  tab20b_r
+Pastel1 Pastel1_r YlOrBr  YlOrBr_r  gnuplot   gnuplot_r   tab20c  tab20c_r
+Pastel2 Pastel2_r YlOrRd  YlOrRd_r  gnuplot2  gnuplot2_r  terrain terrain_r
+PiYG    PiYG_r    afmhot  afmhot_r  gray      gray_r      twilight  twilight_r
+PuBu    PuBu_r    autumn  autumn_r  hot hot_r twilight_shifted    twilight_shifted_r
+PuBuGn  PuBuGn_r  binary  binary_r  hsv hsv_r viridis     viridis_r
+PuOr    PuOr_r    bone    bone_r    inferno   inferno_r   winter  winter_r
+PuRd    PuRd_r    brg     brg_r 
