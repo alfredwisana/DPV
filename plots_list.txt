@@ -86,7 +86,7 @@ Geospatial data:
 
 
 
-
+2 main Plots --> Histogram and scatterplot
 
 COLOR PALETTES
 Accent  Accent_r  Purples Purples_r bwr       bwr_r jet   jet_r

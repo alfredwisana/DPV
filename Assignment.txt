@@ -1,0 +1,30 @@
+Assignment
+
+Job Performance
+
+147 employee
+
+Decide to lay off some people --> will be fired ==> 20%
+
+
+1. Understand why to layoff, which criteria used to fire the 
+employee
+
+GRIP ==> Higher better
+ARM  ==> 
+Ratings ==> Subjective evaluation by the manager ==> higher better
+SIMS ==> work practice simulation  
+
+2. EDA ==> max,min,median,mean
+147 percentile
+
+mean --> normal
+median --> not normal
+
+29-30 people to be fired
+
+scatterplot to show the corr between ratings and sims
+
+highly negative
+
+
