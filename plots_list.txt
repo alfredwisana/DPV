@@ -81,6 +81,8 @@ Geospatial data:
 5.1 map: image_var = matplotlib.image.imread(imagefile)
          plt.imshow(image_var, extent)
 5.2 choropleth map
+
+Pak Adi ga suka cartogram
 5.3 cartogram
 5.4 cartogram heatmap
 
